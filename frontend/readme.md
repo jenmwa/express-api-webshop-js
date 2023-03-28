@@ -5,3 +5,4 @@ vet ej om du behöver veta, men har nodemon installerat som dev-dep, kör igång
 ```bash
     npx nodemon
 ```
+

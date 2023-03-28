@@ -77,6 +77,8 @@ router.post("/login", async (request, response, next) => {
 
     if (crypto.SHA3(password).toString() === findUser.password) {
       response.status(201).json({ email: findUser.email, id: findUser._id });
+
+      //create token in session cookie
     } else {
       response.status(401).json({ error: "Invalid password" });
     }
